@@ -4,14 +4,25 @@
 		<title>Fancify Shamcify</title>
 
 		<!-- link to your script file here -->
-		
+		<script src="fancifymytext.js"></script>
 	</head>
 
 	<body>
 		<h1>Fancify my Text</h1>
 		
-
 		<!-- Your UI controls go here -->
-		
+		<fieldset>
+			<legend>Text</legend>
+			<textarea id="displayedText" rows="4" cols="30"></textarea>
+		</fieldset>
+
+		<fieldset>
+			<legend>Fancify</legend>
+			<button onclick="popupAlert(); increaseTextSize()">Bigger!</button>
+			<button onclick="mooify()">Moo</button>
+			<label><input type="radio" name="fancy" value="BoringBetty" id = "BoringBetty" onchange="newStyle()">BoringBetty</label>
+			<label><input type="radio" name="fancy" value="Fancyshmancy" id = "Fancyshmancy" onchange="newStyle()">Fancyshmancy</label>
+		</fieldset>
+
 	</body>
 </html>
